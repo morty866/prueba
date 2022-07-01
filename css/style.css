@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #84b6f4a8;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    background-color: #fdcae1af;
+    padding: 20px;
+    align-items: center;
+    height: 70%;
+}
+
+.logo{
+    align-items: center;
+}
+
+.logo img{
+    width: 100px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+.wrap{
+    padding-top: 20px;
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+
+.wrap h1{
+    color: #494b4d;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.wrap h1:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #c7c7c7;
+    margin: 20px 0;
+}
+
+.store{
+    display:flex;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+@media (max-width:700px){
+    .productos{
+        flex-direction: column;
+        display: flex;
+        width: 45%;
+    }
+}
+
+.productos .categoria-productos{
+    display: block;
+    width: 90%;
+    padding: 15px 0px;
+    margin-bottom: 20px;
+    background: #003663d2;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.productos .ct_item-active{
+    background: #2d3e50
+}
+
+/* productos */
+
+.lista-productos{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-productos .producto-item{
+    width:22%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    transform: all 0.4s;
+}
+
+@media (max-width:700px){
+    .lista-productos .producto-item{
+        width: 45%;
+        margin-left: 3%;
+        margin-bottom: 25px;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.80);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-start;
+        transform: all 0.4s;
+    }
+}
+
+.lista-productos .producto-item img{
+    width: 100%;
+}
+
+.lista-productos .producto-item a{
+    display: block;
+    width: 100%;
+    padding: 3px 0;
+    background: #2d3350;
+    border-radius: 3px;
+
+    color:white;
+    text-align: center;
+    text-decoration: none;
+}
